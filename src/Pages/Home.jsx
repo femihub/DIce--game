@@ -1,14 +1,15 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 export default function Home() {
     return(
-            <main className="home--body">
-                <h1 className="home--title">You got the travel plans, we <br />
+            <div className="home-container">
+                <h1>You got the travel plans, we <br />
                  got the travel vans.</h1>
-                <p className="home--paragraphy">Add adventure to your life by joining the #vanlife movement.
+                <p>Add adventure to your life by joining the #vanlife movement.
                 <br /> Rent the perfect van to make the perfect road trip.</p>
-                <button className="home--btn">Find your van</button>
-            </main>
+                <Link to="vans">Find your van</Link>
+            </div>
         
     )
   }
